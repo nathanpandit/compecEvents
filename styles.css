@@ -8,11 +8,15 @@ body {
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #258ff0;
     color: white;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 }
 
 .brand-title {
@@ -91,24 +95,86 @@ body {
     }
 }
 
-.inf_container {
+.inf_container:not(#bbo, #ts) {
    border: 6px solid    ;
     height: 500px;
-    margin: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
+    width: 40%;
 }
 .inf_container img {
     position: relative;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+    margin-top: 10%;
 }
 .inf_container h1 {
     font-size: 30px;
 }
 .inf_container p {
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bbo {
+    background: linear-gradient(160deg, black, orange);
+    border: 6px solid    ;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 40%;
+}
+
+#ts {
+    background: linear-gradient(180deg, white, blue);
+    border: 6px solid    ;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 40%;
+}
+
+#dc {
+    background: linear-gradient(45deg, blue, black );
+}
+
+#gj {
+    background: linear-gradient(45deg, white, purple);
+}
+
+#dgtlzd {
+    background: linear-gradient(45deg, white, #3b8f8d);
+}
+
+#td {
+    background: linear-gradient(-35deg, white, purple);
+}
+
+.hugecontainer {
+    display: flex;
+    flex-direction: right;
+    margin-bottom: 15px;
 }
