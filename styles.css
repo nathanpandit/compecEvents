@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box; /* neye yaradı bu? içine sığdırdı border'ıyla beraber*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #258ff0;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem; /* aralarında boşluk olması açısından yaradı... */
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #2a52be;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none; 
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+.inf_container {
+   border: 6px solid    ;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inf_container img {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+.inf_container h1 {
+    font-size: 30px;
+}
+.inf_container p {
+    font-size: 15px;
+}
