@@ -178,3 +178,18 @@ body {
     flex-direction: right;
     margin-bottom: 15px;
 }
+
+@keyframes containers {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.inf_container:hover {
+    transform-origin: 50% 50%;
+    animation: containers 1s;
+    animation-fill-mode: forwards;
+}
