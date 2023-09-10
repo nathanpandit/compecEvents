@@ -73,6 +73,14 @@
 
 <script>
     let container = document.getElementsByClassName("inf_container");
+    container[0].style.transformOrigin = "50% 50%";
+    container[0].addEventListener("mouseover", function() {
+        container[0].style.animation = "containers 1s";
+        container[0].style.animationFillMode ="forwards";
+    })
+    container[0].addEventListener("mouseout", function() {
+    container[0].style.animation = "containersreverse 1s";
+})
 </script>
 </body>
 </html>
